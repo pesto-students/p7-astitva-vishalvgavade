@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <style>
+        #cont{
+            width: 200px;
+            height: 200px;
+            display: grid;
+            grid-template: 'a b'
+                           'c d';
+            margin: auto;
+        }
+        .div1{
+            grid-area:a;
+            background-color: red;
+            transform-origin: top left;
+            transition:rotate 1s ease-in-out;
+        }
+        #cont:hover .div1{
+            rotate: z 90deg;
+        }
+        .div2{
+            grid-area:b;
+            background-color: yellow;
+            transform-origin: top right;
+            transition:rotate 1s ease-in-out;
+        }
+        #cont:hover .div2{
+            rotate:z -90deg;
+        }
+        .div3{
+            grid-area:c;
+            background-color: blue;
+            transform-origin: bottom left;
+            transition:rotate 1s ease-in-out;
+        }
+         #cont:hover .div3{
+            rotate: z -90deg;
+        }
+        .div4{
+            grid-area:d;
+            background-color: green;
+            transform-origin: bottom right;
+            transition:rotate 1s ease-in-out;
+        }
+        #cont:hover .div4{
+            rotate: z 90deg;
+        }
+        h2{
+            position:absolute;
+            top: 80px;
+            left: 650px;
+    
+        } 
+        #cont>div{
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+       <div class="div1"></div>
+       <div class="div2"></div>
+       <div class="div3"></div>
+       <div class="div4"></div>
+       </div>
+       <h2>hello!!</h2>
+</body>
+</html>
