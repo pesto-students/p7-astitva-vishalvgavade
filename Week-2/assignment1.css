@@ -24,6 +24,7 @@
    }
 #div2{
     grid-area: b;
+    padding-left: 10px;
 }
 #div3{
     grid-area: c;
@@ -63,5 +64,9 @@ input{
 
   #div4{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF4uT78_t9bUtcyTPhQ6Sjg1d7bQIXTmUMUA&usqp=CAU');
+  }
+  p::first-letter{
+    font-size: 25px;
+    font-weight: 500;
   }
   
