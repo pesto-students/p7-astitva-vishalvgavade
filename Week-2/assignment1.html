@@ -5,69 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>assignment1</title>
-    <style>
-        #topcont{
-            max-width: 100vw;
-            grid-gap: 20px;
-            display: grid;
-            grid-template: 'a a a a'
-                           'a a a a'
-                           'b b c c'
-                           'b b c c'
-                           'd d e e'
-                           'd d e e'
-                           'd d f f'
-                           'd d f f';
-
-        }
-        #div1{
-            grid-area: a;
-            background-color: yellow;
-           }
-        #div2{
-            grid-area: b;
-            background-color: blue;
-        }
-        #div3{
-            grid-area: c;
-            background-color: aqua;
-        }
-        #div4{
-            grid-area: d;
-            background-color: rgb(242, 165, 165);
-        }
-        #div5{
-            grid-area: e;
-            background-color: brown;
-        }
-        #div6{
-            grid-area: f;
-            background-color: blueviolet;
-        }
-        img{
-            width: 400px;
-            height: 300px;
-          
-        }
-        #middle{
-         padding-top: 20px;
-         width: 400px;
-         height: 400px;
-         background-color: aqua;
-         margin: auto;
-        }
-        #middle>form{
-            align-items: center;
-            padding-left: 30px;
-        }
-        input{
-            margin: 10px;
-            align-items: baseline;
-        }
-    </style>
+    <link rel="stylesheet" href="assignment1.css">
 </head>
 <body>
-    <div id="topcont">
+    <div id="maincont">
+     <div id="topcont">       <!--   topboxes created using grid -->
         <div id="div1">
            <h1 style="text-align: center;">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1> 
         </div>
@@ -79,8 +21,9 @@
         <div id="div5"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, quasi, quam amet corrupti ratione veritatis nihil eveniet blanditiis neque illum maiores numquam? Animi modi, voluptatum perferendis laborum similique reiciendis velit?</p></div>
         <div id="div6"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus a corporis expedita eos soluta dolorum dolore, amet eaque alias eius autem nisi dignissimos accusantium repellendus est modi iste rerum itaque.</p></div>
     </div>
-    <div id="middle">
+    <div id="middle">              <!--  middle  form -->
         <form action="">
+            <div>
             <label for="gender">Title</label>
             <input type="radio" name="gender" id="gender">
             <label for="gender">Mr</label>
@@ -89,30 +32,38 @@
             <input type="radio" name="gender" id="gender">
             <label for="gender">Miss</label>
             <input type="radio" name="gender" id="gender">
-            <br>
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname">
-            <br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname">
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-            <br>
-            <label for="pno">Phone Number:</label>
-            <input type="number" id="pno">
-            <br>
-            <label for="pass">Password:</label>
-            <input type="password" id="pass">
-            <br>
-            <label for="cpass">Conferm Password:</label>
+            </div>
+            <div>
+            <label class="maindiv"  for="fname">First Name:</label>
+            <input type="text" id="fname" required>
+            </div>
+            <div>
+            <label class="maindiv" for="lname">Last Name:</label>
+            <input type="text" id="lname" required>
+            </div>
+            <div>
+            <label class="maindiv" for="email">Email:</label>
+            <input type="email" id="email" required>
+            </div>
+            <div>
+            <label class="maindiv" for="pno">Phone Number:</label>
+            <input type="number" id="pno" required>  
+            </div>
+            <div>
+            <label class="maindiv" for="pass">Password:</label>
+            <input type="password" id="pass" required>
+            </div>
+            <div>
+            <label class="maindiv" for="cpass">Conferm Password:</label>
             <input type="password" id="cpass">
-            <br>
+            </div>
+            <div>
             <input type="checkbox" name="" id="checkbox">
             <label for="checkbox">I agree to the <a href="">Terms and Condition</a></label>
-            <br>
+            </div>
             <button>Sign Up</button>
         </form>
+    </div>
     </div>
 </body>
 </html>
