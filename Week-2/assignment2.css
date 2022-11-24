@@ -1,0 +1,54 @@
+ #cont{                                  /*   main container */
+    width: 200px;
+    height: 200px;
+    display: grid;
+    grid-template: 'a b'
+                   'c d';
+    margin: auto;
+    margin-top: 200px;
+}
+ .div1{                 /*  red box */
+    grid-area:a;
+    background-color: red;
+    transform-origin: top left;
+    transition:rotate 1s ease-in-out;
+}
+#cont:hover .div1{
+    rotate: z 90deg;
+}
+.div2{                               /*  yellow box */
+    grid-area:b;
+    background-color: yellow;
+    transform-origin: top right;
+    transition:rotate 1s ease-in-out;
+}
+#cont:hover .div2{
+    rotate:z -90deg;
+}
+.div3{                               /*  blue box */
+    grid-area:c;
+    background-color: blue;
+    transform-origin: bottom left;
+    transition:rotate 1s ease-in-out;
+}
+ #cont:hover .div3{
+    rotate: z -90deg;
+}
+.div4{                                   /*  green box */
+    grid-area:d;
+    background-color: green;
+    transform-origin: bottom right;
+    transition:rotate 1s ease-in-out;
+}
+#cont:hover .div4{
+    rotate: z 90deg;
+}
+h2{                                        /*  hellow world */
+    position:absolute ;
+    top: 265px;
+    left: 650px;
+
+} 
+#cont>div{
+    z-index: 1;
+}
