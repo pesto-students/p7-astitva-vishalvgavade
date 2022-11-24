@@ -7,7 +7,7 @@ const obj = {
   profession: "farmer",
   //Income:10000,
 };
-function first(age, houseName) {
+function first(age, houseName) {          //function first
   console.log("Name:"+this.fname + " " + this.Lname + ",Age:" + age + " Address:" + houseName);
 }
 function second(landmark, pincode) {
@@ -26,7 +26,7 @@ function third(income) {
       income
   );
 }
-first.call(obj, 56, "Nirankar House");
-second.apply(obj, ["Near Aurangabad", 410003]);
-let newFun1 = third.bind(obj, 10000);
+first.call(obj, 56, "Nirankar House");     //call 
+second.apply(obj, ["Near Aurangabad", 410003]);    //apply
+let newFun1 = third.bind(obj, 10000);          //bind
 newFun1();
