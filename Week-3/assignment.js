@@ -1,14 +1,12 @@
 function add(...rest) {              //Add function
-  var sum=0
-  for(var i=0;i<rest.length;i++){
-    sum=sum+rest[i];
-  }
-  return sum;
+  return rest.reduce(function (first , second){
+    return first + second;
+  })
 }
-let cache = {};                     //declared empty array
+let cache = {};                     //declared empty object
 function memoize(fun) {            //Memoize function
   return function (...args){
-    console.log(cache);
+    // console.log(cache);
     if (args.length==1) {
       return args[0];
     } else if ((args) in cache) {
