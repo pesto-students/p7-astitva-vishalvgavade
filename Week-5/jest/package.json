@@ -1,0 +1,11 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "assignment.jest.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "vishal",
+  "license": "ISC"
+}
